@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Zhuo</title>
+    <link rel="icon" href="assets/images/cat_icon.png">
+    <style type = "text/css">
+        nav.border {
+            border:1px solid;
+         }
+    </style>
+</head>
+<body id="page-top">
+    <nav id="sideNav" class="border">
+        <a href="/index.html">
+            <figure>
+                <img src="assets/images/cartoon_avatar.png" alt="" height="100" width="100" />
+                <figcaption>Zhuo</figcaption>
+            </figure>
+        </a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="/bio.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/projects.html">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/publications.html">Publications</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/experiments.html">Experiments</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <header>
+        <h1>
+            About me
+        </h1>
+    </header>
+    <main>
+        <section>
+            <h2>Biography</h2>
+            <p>
+                I'm a CS master student at UCSD. My skills focus on <i>web developmen</i> and <i>system development</i>.
+            </p>
+            <table>
+                <caption>My skills</caption>
+                <colgroup>
+                    <col span="1" />
+                    <col span="1" />
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>Categories</th>
+                        <th>Tech Stacks</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            Programming Languages:
+                        </td>
+                        <td>
+                            Python, C++, C, Java, Golang, Scala, SQL, Bash Shell
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Web Frameworks:
+                        </td>
+                        <td>
+                            Flask, Django, Apache Thrift, Selenium
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Database/Big Data:
+                        </td>
+                        <td>
+                            MySQL, Kafka, Spark, Hadoop MadReduce, Hive, Redis
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <h2>Leave me a message</h2>
+            <form action="/form-handler" method="POST">
+                <fieldset>
+                    <legend>Contact Info</legend>
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" name="firstName"/>
+                    <label for="lasttName">Last Name:</label>
+                    <input type="text" id="lasttName" name="lasttName"/>
+                    <br />
+                    <label for="pronoun">Pronouns:</label>
+                    <input type="text" list="pronouns" id="pronoun" name="pronoun"/>
+                    <datalist id="pronouns">
+                        <option value="he/him/his">he/him/his</option>
+                        <option value="she/her/hers">she/her/hers</option>
+                        <option value="they/them/theirs">they/them/theirs</option>
+                        <option value="ze/zir/zirs">ze/zir/zirs</option>
+                        <option value="ze/hir/hirs">ze/hir/hirs</option>
+                    </datalist>
+                    <br />
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email"/>
+                </fieldset>
+                <fieldset>
+                    <legend>Message</legend>
+                    <label for="messageType">Type:</label>
+                    <select name="messageType" id="messageType">
+                        <optgroup label="business">
+                            <option value="recruitments">recruitments</option>
+                            <option value="projects">open source projects</option>
+                            <option value="technical">technical queries</option>
+                        </optgroup>
+                        <optgroup label="other">
+                            <option value="sports">sports</option>
+                            <option value="games">games</option>
+                            <option value="others">others</option>
+                        </optgroup>
+                    </select>
+                    <br />
+                    <label for="content">Content:</label>
+                    <textarea id="content" name="content" cols="80" rows="5"></textarea>
+                </fieldset>
+                <button type="submit">Contact Me</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <hr />
+        &copy; 2023 Zhuo
+    </footer>
+</body>
+</html>

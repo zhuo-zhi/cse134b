@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Zhuo</title>
+    <link rel="icon" href="assets/images/cat_icon.png">
+    <style type = "text/css">
+        nav.border {
+            border:1px solid;
+         }
+    </style>
+</head>
+<body id="page-top">
+    <nav id="sideNav" class="border">
+        <a href="/index.html">
+            <figure>
+                <img src="assets/images/cartoon_avatar.png" alt="" height="100" width="100" />
+                <figcaption>Zhuo</figcaption>
+            </figure>
+        </a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="/bio.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/projects.html">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/publications.html">Publications</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/experiments.html">Experiments</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <header>
+        <h1>
+            Experimenttal Features
+        </h1>
+    </header>
+    <main>
+        <template id="template">
+            <p>HTML strings out of JavaScript</p>
+        </template>
+        <p>My favorite piano song: Canon.</p>
+        <audio controls="controls" src="https://www.orangefreesounds.com/wp-content/uploads/2017/12/Canon-d-piano-song.mp3?_=1" ></audio>
+        <p>Let's go skiing.</p>
+        <video src="https://media.istockphoto.com/id/1321751278/video/snowboarder-riding-from-mountain.mp4?s=mp4-640x640-is&k=20&c=-liLf_2lQ_GrXYAOofseDwUcflcE3-3PypOBmjAVOsQ=" width="300" height="300" controls>
+            Video not supported.
+        </video>
+        <p>
+           A trivia: What's the difference between <code>yield</code> and <code>return</code> in Python?
+        </p>
+        <canvas id="myCanvas" width="500" height="100" style="border:1px solid #000000;">
+        <script>
+            var c = document.getElementById("myCanvas");
+            var ctx = c.getContext("2d");
+            ctx.font = "30px Arial";
+            ctx.fillText("Experimenting text in a canvas.", 10, 50);
+        </script>
+        </canvas>
+        <p>Find UCSD on the map: </p>
+        <iframe width="600" height="400" id="gmap" title="gmap" src="https://maps.google.com/maps?q=ucsd&t=&z=13&ie=UTF8&iwloc=&output=embed" ></iframe>
+    </main>
+    <footer>
+        <hr />
+        &copy; 2023 Zhuo
+    </footer>
+</body>
+</html>
