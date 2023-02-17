@@ -5,28 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Zhuo</title>
     <link rel="icon" href="assets/images/cat_icon.png">
+    <link href="/style.css" rel="stylesheet">
 </head>
 <body id="page-top">
-    <nav id="sideNav" class="border">
-        <a href="/index.html">
-            <figure>
-                <img src="assets/images/cartoon_avatar.png" alt="avatar" height="100" width="100" />
-                <figcaption>Zhuo</figcaption>
+    <!-- backgroun image from: https://yosemite.org/starry-nights-in-the-sierra/ -->
+    <nav id="sideNav" class="navbar">
+        <a class="navbard-head" href="/index.html">
+            <figure class="img-profile-figure">
+                <img class="img-profile" src="assets/images/cartoon_avatar.png" alt="avatar" height="100" width="100"/>
+                <figcaption class="author">Zhuo Zhi</figcaption>
             </figure>
         </a>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a href="/bio.html">About</a>
+        <a class="horizontal-author" href="/index.html">Zhuo Zhi</a>
+        <a class="hamburger" href="#navbar-content">
+            <img class="nav-icon" src="assets/images/ham-removebg.png" alt="nav-icon"/>
+        </a>
+        <div class="navbar-content" id="navbar-content">
+            <ul class="navbar-list" id="navbar-list">
+                <li class="nav-item close">
+                    <a class="nav-link" href="#">
+                        <img src="assets/images/crossicon-removebg.png" atl="close" height="20" width="20" />
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <a href="/projects.html">Projects</a>
+                    <a class="nav-link" href="/bio.html">About</a>
                 </li>
                 <li class="nav-item">
-                    <a href="/publications.html">Publications</a>
+                    <a class="nav-link" href="/projects.html">Projects</a>
                 </li>
                 <li class="nav-item">
-                    <a href="/experiments.html">Experiments</a>
+                    <a class="nav-link" href="/publications.html">Publications</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/experiments.html">Experiments</a>
                 </li>
             </ul>
         </div>
@@ -40,21 +51,29 @@
         <ul>
             <li>
                 <div class="project">
-                    <p><em>DIRNet: </em>Reimplemtation of DIRNet model for unsupervised deformable image registration with PyTorch</p>
+                    <p class="projectheading"><em>DIRNet: </em>Reimplemtation of DIRNet model for unsupervised deformable image registration with PyTorch</p>
                     <p>[<a href="https://github.com/zhuo-zhi/DIRNet-PyTorch">code</a>]</p>
                     <details>
                         <summary>Diagram</summary>
-                        <img src='assets/images/Dirnet.jpeg' alt="diagram1" width="350">
+                        <picture>
+                            <source srcset="assets/images/Dirnet.jpeg" media="(min-width: 768px)" width="350" alt="DIRNet Diagram">
+                            <source srcset="assets/images/Dirnet_large.png" media="(min-width: 480px)" alt="DIRNet Diagram">
+                            <img src="assets/images/Dirnet_medium.png" alt="DIRNet Diagram"/>
+                        </picture>
                     </details>
                 </div>
             </li>
             <li>
                 <div class="project">
-                    <p><em>Improving NQG with Adversarial Training: </em>A research project about improving the performance of neural question generation by doing adversarial training within the framework of GANs</p>
+                    <p class="projectheading"><em>Improving NQG with Adversarial Training: </em>A research project about improving the performance of neural question generation by doing adversarial training within the framework of GANs</p>
                     <p>[<a href="https://github.com/zhuo-zhi/Improving-NQG-with-CGAN">code</a>]</p>
                     <details>
                         <summary>Diagram</summary>
-                        <img src='assets/images/nqg_gan.jpeg' alt="diagram2" width="350">
+                        <picture>
+                            <source srcset="assets/images/nqg_gan.jpeg" media="(min-width: 768px)" width="350" alt="DIRNet Diagram">
+                            <source srcset="assets/images/nqg_gan_large.png" media="(min-width: 480px)" alt="DIRNet Diagram">
+                            <img src="assets/images/nqg_gan_medium.png" lt="NQG Diagram"/>
+                        </picture>
                     </details>
                 </div>
             </li>

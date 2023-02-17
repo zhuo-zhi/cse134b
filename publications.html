@@ -5,28 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Zhuo</title>
     <link rel="icon" href="assets/images/cat_icon.png">
+    <link href="/style.css" rel="stylesheet">
 </head>
 <body id="page-top">
-    <nav id="sideNav" class="border">
-        <a href="/index.html">
-            <figure>
-                <img src="assets/images/cartoon_avatar.png" alt="avatar" height="100" width="100" />
-                <figcaption>Zhuo</figcaption>
+    <!-- backgroun image from: https://yosemite.org/starry-nights-in-the-sierra/ -->
+    <nav id="sideNav" class="navbar">
+        <a class="navbard-head" href="/index.html">
+            <figure class="img-profile-figure">
+                <img class="img-profile" src="assets/images/cartoon_avatar.png" alt="avatar" height="100" width="100"/>
+                <figcaption class="author">Zhuo Zhi</figcaption>
             </figure>
         </a>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a href="/bio.html">About</a>
+        <a class="horizontal-author" href="/index.html">Zhuo Zhi</a>
+        <a class="hamburger" href="#navbar-content">
+            <img class="nav-icon" src="assets/images/ham-removebg.png" alt="nav-icon"/>
+        </a>
+        <div class="navbar-content" id="navbar-content">
+            <ul class="navbar-list" id="navbar-list">
+                <li class="nav-item close">
+                    <a class="nav-link" href="#">
+                        <img src="assets/images/crossicon-removebg.png" atl="close" height="20" width="20" />
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <a href="/projects.html">Projects</a>
+                    <a class="nav-link" href="/bio.html">About</a>
                 </li>
                 <li class="nav-item">
-                    <a href="/publications.html">Publications</a>
+                    <a class="nav-link" href="/projects.html">Projects</a>
                 </li>
                 <li class="nav-item">
-                    <a href="/experiments.html">Experiments</a>
+                    <a class="nav-link" href="/publications.html">Publications</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/experiments.html">Experiments</a>
                 </li>
             </ul>
         </div>
@@ -40,7 +51,7 @@
         <ol>
             <li>
                 <div class="pub">
-                    <p>Generative Scene Graph Networks</p>
+                    <p class="projectheading">Generative Scene Graph Networks</p>
                     <p>F. Deng, <strong>Z. Zhi</strong>, D. Leem, S. Ahn</p>
                     <p>In the 9th International Conference on Learning Representations (<b>ICLR</b>)</p>
                     <p>[<a href="https://openreview.net/pdf?id=RmcPm9m3tnk">paper</a>]</p>
@@ -48,7 +59,7 @@
             </li>
             <li>
                 <div class="pub">
-                    <p>Hierarchical Decomposition and Generation of Scenes with Compositional Objects</p>
+                    <p class="projectheading">Hierarchical Decomposition and Generation of Scenes with Compositional Objects</p>
                     <p>F. Deng, <strong>Z. Zhi</strong>, S. Ahn</p>
                     <p>In the 37th International Conference on Machine Learning (<b>ICML</b>) 
                         Workshop on Object-Oriented Learning, 2020. (<span class="mark">Spotlight</span> paper)</p>

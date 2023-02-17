@@ -1,0 +1,350 @@
+@font-face {
+    font-family: 'Saira Extra Condensed';
+    font-style: normal;
+    font-weight: normal;
+    src: url(https://fonts.gstatic.com/s/sairaextracondensed/v11/-nFsOHYr-vcC7h8MklGBkrvmUG9rbpkisrTri3j2_C9OsGa2.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    font-display: swap;
+}
+
+/* latin */
+@font-face {
+    font-family: 'Saira Extra Condensed';
+    font-style: normal;
+    font-weight: bold;
+    src: url(https://fonts.gstatic.com/s/sairaextracondensed/v11/-nFvOHYr-vcC7h8MklGBkrvmUG9rbpkisrTrU23h2wphmGy-oA.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: normal;
+    font-stretch: 100%;
+    src: url(https://fonts.gstatic.com/s/opensans/v34/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWuU6FxZCJgg.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-stretch: 100%;
+    src: url(https://fonts.gstatic.com/s/opensans/v34/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-mu0SC55I.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-stretch: 100%;
+    src: url(https://fonts.gstatic.com/s/opensans/v34/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-mu0SC55I.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+:root {
+    --font: "Open Sans", serif;
+    --condensed-font: "Saira Extra Condensed", serif;
+}
+
+p, li {
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    color: #BD5D38;
+}
+
+a:hover, a:active, a:focus {
+    color: #824027;
+}
+
+nav a:hover, nav a:active, nav a:focus {
+    color: rgba(255, 255, 255, 1);
+}
+
+body {
+    font-family: var(--font);
+}
+
+.nav-link {
+    display: block;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, .5);
+}
+
+div.homepage-content {
+    text-align: center;
+}
+
+.projectheading {
+    font-size: 1.1rem;
+    font-weight: bold;
+    /* color: #343a40; */
+}
+
+label{
+    display: block;
+    float: left;
+    clear: left;
+    text-align: right;
+    width: 6rem;
+}
+
+input {
+    display: block;
+    float: left;
+}
+
+textarea {
+    width: 60%;
+    height: 100px;
+    padding: 10px;
+}
+
+table thead tr {
+    background-color: #333333;
+    color: #ffffff;
+    text-align: left;
+}
+
+@media (min-width: 768px) {
+    .navbar {
+        background-color: #333333;
+        background-size: cover; 
+        background-position: center center; 
+        background-image: url(assets/images/starry_bg.jpeg);
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        width: 16rem;
+        height: 100vh;
+        justify-content: center;
+        list-style: none;
+        text-align: center;
+    }
+
+    .navbar-list {
+        padding-left: 0;
+    }
+
+    .nav-item {
+        display: block;
+        padding: 0.5rem;
+        font-size: 1.2rem;
+    }
+
+    body {
+        margin-left: 18rem;
+        margin-right: 2rem;
+        margin-top: 0;
+        padding-top: 54px;
+    }
+
+    h1 {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+
+    h2 {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+
+    .author {
+        color:white;
+        font-size: 3rem;
+        font-family: var(--condensed-font);
+        font-weight: bold;
+        margin-top: 0.1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .img-profile {
+        max-width: 10rem;
+        max-height: 10rem;
+        border-radius: 50% !important;
+        border: 0.5rem solid rgba(255, 255, 255, 0.5);
+    }
+
+    .horizontal-author, .nav-icon, .close {
+        display: none;
+    }
+
+    @-webkit-keyframes meowmove {
+        from {left: 0px;}
+        to {left: 50px;}
+    }
+
+    @keyframes meowmove {
+        from {left: 0px;}
+        to {left: 50px;}
+    }
+
+    svg.meow {
+        position: relative;
+        -webkit-animation-name: meowmove;
+                animation-name: meowmove;
+        -webkit-animation-duration: 5s;
+                animation-duration: 5s;
+        -webkit-animation-timing-function: ease;
+                animation-timing-function: ease;
+        -webkit-animation-iteration-count: infinite;
+                animation-iteration-count: infinite;
+    }
+}
+
+/* tablet */
+@media (max-width: 768px) {
+    .navbar {
+        background-color: #333333;
+        background-size: cover; 
+        background-position: center center; 
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 4rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.5rem 1rem;
+        z-index: 90;
+    }
+
+    .navbard-head {
+        display: none;
+    }
+
+    .nav-icon {
+        z-index: 90;
+        max-height: 2rem;
+        max-width: 2rem;
+        cursor: pointer;
+    }
+
+    .navbar-content {
+        background-color: #333333;
+        position: fixed;
+        z-index: 100;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 18vh;
+        display: flex;
+        flex-direction: column;
+        transform: translateY(-150%);
+    }
+
+    .navbar-content:target {
+        transform: translateY(0);
+        transition: transform 0.2s ease;
+    }
+
+    .navbar-list {
+        list-style: none;
+        padding-left: 1rem;
+        color: rgba(255, 255, 255, .5);
+    }
+
+    .nav-item {
+        font-size: 1.1rem;
+    }
+
+    .close {
+        padding-left: 0;
+    }
+
+    .horizontal-author {
+        color: rgba(255, 255, 255, .5);
+        font-size: 1.25rem;
+        font-family: var(--font);
+        font-weight: bold;
+        text-align: start;
+    }
+
+    body {
+        margin-top: 6rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    h1 {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+
+    h2 {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+    }
+
+    @-webkit-keyframes meowmove {
+        from {left: 0px;}
+        to {left: 50px;}
+    }
+
+    @keyframes meowmove {
+        from {left: 0px;}
+        to {left: 50px;}
+    }
+
+    svg.meow {
+        position: relative;
+        -webkit-animation-name: meowmove;
+                animation-name: meowmove;
+        -webkit-animation-duration: 5s;
+                animation-duration: 5s;
+        -webkit-animation-timing-function: ease;
+                animation-timing-function: ease;
+        -webkit-animation-iteration-count: infinite;
+                animation-iteration-count: infinite;
+    }
+
+    iframe {
+        width: 90%;
+    }
+}
+
+
+/* mobile */
+@media (max-width: 480px) {
+    .meow, .cat-text {
+        display: none;
+    }
+
+    
+    h1 {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+    }
+
+    h2 {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+
+    audio, video, iframe, canvas {
+        width: 90%;
+    }
+}

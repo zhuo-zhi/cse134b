@@ -5,28 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Zhuo</title>
     <link rel="icon" href="assets/images/cat_icon.png">
+    <link href="/style.css" rel="stylesheet">
 </head>
-<body id="page-top">
-    <nav id="sideNav" class="border">
-        <a href="/index.html">
-            <figure>
-                <img src="assets/images/cartoon_avatar.png" alt="avatar" height="100" width="100" />
-                <figcaption>Zhuo</figcaption>
+<body class="experiments" id="page-top">
+    <!-- backgroun image from: https://yosemite.org/starry-nights-in-the-sierra/ -->
+    <nav id="sideNav" class="navbar">
+        <a class="navbard-head" href="/index.html">
+            <figure class="img-profile-figure">
+                <img class="img-profile" src="assets/images/cartoon_avatar.png" alt="avatar" height="100" width="100"/>
+                <figcaption class="author">Zhuo Zhi</figcaption>
             </figure>
         </a>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a href="/bio.html">About</a>
+        <a class="horizontal-author" href="/index.html">Zhuo Zhi</a>
+        <a class="hamburger" href="#navbar-content">
+            <img class="nav-icon" src="assets/images/ham-removebg.png" alt="nav-icon"/>
+        </a>
+        <div class="navbar-content" id="navbar-content">
+            <ul class="navbar-list" id="navbar-list">
+                <li class="nav-item close">
+                    <a class="nav-link" href="#">
+                        <img src="assets/images/crossicon-removebg.png" atl="close" height="20" width="20" />
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <a href="/projects.html">Projects</a>
+                    <a class="nav-link" href="/bio.html">About</a>
                 </li>
                 <li class="nav-item">
-                    <a href="/publications.html">Publications</a>
+                    <a class="nav-link" href="/projects.html">Projects</a>
                 </li>
                 <li class="nav-item">
-                    <a href="/experiments.html">Experiments</a>
+                    <a class="nav-link" href="/publications.html">Publications</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/experiments.html">Experiments</a>
                 </li>
             </ul>
         </div>
@@ -49,7 +60,7 @@
         <p>
            A trivia: What's the difference between <code>yield</code> and <code>return</code> in Python?
         </p>
-        <canvas id="myCanvas" width="500" height="100" style="border:1px solid #000000;">
+        <canvas id="myCanvas" width="460" height="100" style="border:1px solid #000000;">
         <script>
             var c = document.getElementById("myCanvas");
             var ctx = c.getContext("2d");
@@ -58,7 +69,7 @@
         </script>
         </canvas>
         <p>Find UCSD on the map: </p>
-        <iframe width="600" height="400" id="gmap" title="gmap" src="https://maps.google.com/maps?q=ucsd&t=&z=13&ie=UTF8&iwloc=&output=embed" ></iframe>
+        <iframe width="460" height="350" id="gmap" title="gmap" src="https://maps.google.com/maps?q=ucsd&t=&z=13&ie=UTF8&iwloc=&output=embed" ></iframe>
     </main>
     <footer>
         <hr />

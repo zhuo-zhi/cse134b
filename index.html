@@ -5,65 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Zhuo</title>
     <link rel="icon" href="assets/images/cat_icon.png">
-    <style>
-        nav.border {
-            border:1px solid;
-         }
-    </style>
+    <link href="/style.css" rel="stylesheet">
 </head>
 <body id="page-top">
-    <nav id="sideNav" class="border">
-        <a href="/index.html">
-            <figure>
-                <img src="assets/images/cartoon_avatar.png" alt="avatar" height="100" width="100" />
-                <figcaption>Zhuo</figcaption>
+    <!-- backgroun image from: https://yosemite.org/starry-nights-in-the-sierra/ -->
+    <nav id="sideNav" class="navbar">
+        <a class="navbard-head" href="/index.html">
+            <figure class="img-profile-figure">
+                <img class="img-profile" src="assets/images/cartoon_avatar.png" alt="avatar" height="100" width="100"/>
+                <figcaption class="author">Zhuo Zhi</figcaption>
             </figure>
         </a>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a href="/bio.html">About</a>
+        <a class="horizontal-author" href="/index.html">Zhuo Zhi</a>
+        <a class="hamburger" href="#navbar-content">
+            <img class="nav-icon" src="assets/images/ham-removebg.png" alt="nav-icon"/>
+        </a>
+        <div class="navbar-content" id="navbar-content">
+            <ul class="navbar-list" id="navbar-list">
+                <li class="nav-item close">
+                    <a class="nav-link" href="#">
+                        <img src="assets/images/crossicon-removebg.png" atl="close" height="20" width="20" />
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <a href="/projects.html">Projects</a>
+                    <a class="nav-link" href="/bio.html">About</a>
                 </li>
                 <li class="nav-item">
-                    <a href="/publications.html">Publications</a>
+                    <a class="nav-link" href="/projects.html">Projects</a>
                 </li>
                 <li class="nav-item">
-                    <a href="/experiments.html">Experiments</a>
+                    <a class="nav-link" href="/publications.html">Publications</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/experiments.html">Experiments</a>
                 </li>
             </ul>
         </div>
     </nav>
     <header>
         <h1>
-            Welcome to Zhuo's website.
+            Welcome!
         </h1>
     </header>
     <main>
-        <picture>
-            <source srcset="assets/images/cartoon_avatar_large.png" media="(min-width: 1000px)">
-            <source srcset="assets/images/cartoon_avatar_medium.png" media="(min-width: 800px)">
-            <img src="assets/images/cartoon_avatar_small.png" alt="avatar" />
-        </picture>
-        
-        <h2>Zhuo Zhi</h2>
-        <h3>Graduate Student @ UCSD</h3>
-        <p>Intersted in web development, system development.</p>
-        <aside>
-            <p>A fun fact about me: I'm a cat person.</p>
-        </aside>
-        <svg height="50" width="200">
-            <text x="100" y="15" fill="green" transform="rotate(10, 10, 10)">Meow!</text>
+        <div class="homepage-content">
+            <picture>
+                <source srcset="assets/images/cartoon_avatar_large.png" media="(min-width: 768px)" alt="avatar">
+                <source srcset="assets/images/cartoon_avatar_medium.png" media="(min-width: 480px)" alt="avatar">
+                <img src="assets/images/cartoon_avatar_small.png" alt="avatar" />
+            </picture>
+            
+            <h2>Zhuo Zhi</h2>
+            <h3>Graduate Student @ UCSD</h3>
+            <p>Intersted in web development, system development.</p>
+            <aside>
+                <p>A fun fact about me: I'm a cat person.</p>
+            </aside>
+        </div>
+        <svg class="meow" height="50" width="200">
+            <text x="150" y="15" fill="green" transform="rotate(10, 10, 10)">Meow!</text>
         </svg>
-        <pre>
-            _,,/|
-            \o o'
-            =_~_=
-            /   \ (\
-            (////_)//
-            ~~~
+        <pre class="cat-text">
+                    _,,/|
+                    \o o'
+                    =_~_=
+                    /   \ (\
+                    (////_)//
+                    ~~~
         </pre>
     </main>
     <footer>
