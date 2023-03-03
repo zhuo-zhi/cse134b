@@ -8,6 +8,7 @@
     <link href="/style.css" rel="stylesheet">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-74SKSZF27E"></script>
+    <script async src="/search.js"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
@@ -57,8 +58,11 @@
         </h1>
     </header>
     <main>
+        <input type="text" class="searchInput" onkeyup="search_projects()" id="searchInput" placeholder="Search..">
+        <img src="assets/images/searchIcon.png" onclick="search_projects()" class="searchButton" atl="searchButton"/>
+        <br>
         <ul>
-            <li>
+            <li class="project-item">
                 <div class="project">
                     <p class="projectheading"><em>DIRNet: </em>Reimplemtation of DIRNet model for unsupervised deformable image registration with PyTorch</p>
                     <p>[<a href="https://github.com/zhuo-zhi/DIRNet-PyTorch">code</a>]</p>
@@ -72,15 +76,15 @@
                     </details>
                 </div>
             </li>
-            <li>
+            <li class="project-item">
                 <div class="project">
                     <p class="projectheading"><em>Improving NQG with Adversarial Training: </em>A research project about improving the performance of neural question generation by doing adversarial training within the framework of GANs</p>
                     <p>[<a href="https://github.com/zhuo-zhi/Improving-NQG-with-CGAN">code</a>]</p>
                     <details>
                         <summary>Diagram</summary>
                         <picture>
-                            <source srcset="assets/images/nqg_gan.jpeg" media="(min-width: 768px)" width="350" alt="DIRNet Diagram">
-                            <source srcset="assets/images/nqg_gan_large.png" media="(min-width: 480px)" alt="DIRNet Diagram">
+                            <source srcset="assets/images/nqg_gan.jpeg" media="(min-width: 768px)" width="350" alt="NQG Diagram">
+                            <source srcset="assets/images/nqg_gan_large.png" media="(min-width: 480px)" alt="NQG Diagram">
                             <img src="assets/images/nqg_gan_medium.png" lt="NQG Diagram"/>
                         </picture>
                     </details>

@@ -110,6 +110,25 @@ table thead tr {
     text-align: left;
 }
 
+.searchButton:hover,
+.searchButton:focus {
+    opacity: .75;
+    cursor: pointer;
+}
+.searchButton {
+    height: 36px;
+}
+
+.searchInput {
+    width: 30%;
+    border: 3px solid;
+    padding: 5px;
+    height: 20px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: darkgray;
+}
+
 @media (min-width: 768px) {
     .navbar {
         background-color: #333333;
