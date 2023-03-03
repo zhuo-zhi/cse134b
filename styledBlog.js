@@ -30,19 +30,19 @@ addDialog.addEventListener('close', () => {
     if (!title || !date || !summary) {
         return alert('Please enter data');
     }
-    
+
     if (isEdit >= items.length) {
         return alert('Index error');
-    } else if(isEdit >= 0) {
+    } else if (isEdit >= 0) {
         items[isEdit].title = title;
         items[isEdit].date = date;
         items[isEdit].summary = summary;
     } else {
         items.push({
-        title: title,
-        date: date,
-        summary: summary,
-    });
+            title: title,
+            date: date,
+            summary: summary,
+        });
     }
     localStorage.setItem('blogs-list', JSON.stringify(items));
     listItems();
@@ -74,8 +74,8 @@ function listItems() {
         list += "<td><span id='displayTitle'>" + items[i].title + "</span></td>";
         list += "<td><span id='displayDate'>" + items[i].date + "</span></td>";
         list += "<td><span id='displaySummary'>" + items[i].summary + "</span></td>";
-        list += "<td><img src='assets/images/editIcon.png' atl='delete' height='20' width='20' id='editButton' class='button' onclick='editBlog(" + i +")'></img> ";
-        list += "<img src='assets/images/deleteIcon.png' atl='delete' height='20' width='20' id='deleteButton' class='button' onclick='deleteBlog(" + i +")'></img></td>";
+        list += "<td><img src='assets/images/editIcon.png' atl='delete' height='20' width='20' id='editButton' class='button' onclick='editBlog(" + i + ")'></img> ";
+        list += "<img src='assets/images/deleteIcon.png' atl='delete' height='20' width='20' id='deleteButton' class='button' onclick='deleteBlog(" + i + ")'></img></td>";
         list += "</tr>";
     }
     document.querySelector("#list-items").innerHTML = list;

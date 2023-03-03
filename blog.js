@@ -30,19 +30,19 @@ addDialog.addEventListener('close', () => {
     if (!title || !date || !summary) {
         return alert('Please enter data');
     }
-    
+
     if (isEdit >= items.length) {
         return alert('Index error');
-    } else if(isEdit >= 0) {
+    } else if (isEdit >= 0) {
         items[isEdit].title = title;
         items[isEdit].date = date;
         items[isEdit].summary = summary;
     } else {
         items.push({
-        title: title,
-        date: date,
-        summary: summary,
-    });
+            title: title,
+            date: date,
+            summary: summary,
+        });
     }
     localStorage.setItem('blogs-list', JSON.stringify(items));
     listItems();
@@ -74,8 +74,8 @@ function listItems() {
         list += "<span id='displayTitle'>" + items[i].title + "</span> ";
         list += "<span id='displayDate'>" + items[i].date + "</span> ";
         list += "<span id='displaySummary'>" + items[i].summary + "</span> ";
-        list += "<button id='deleteButton' onclick='deleteBlog(" + i +")'>Delete</button> ";
-        list += "<button id='editButton' onclick='editBlog(" + i +")'>Edit</button>";
+        list += "<button id='deleteButton' onclick='deleteBlog(" + i + ")'>Delete</button> ";
+        list += "<button id='editButton' onclick='editBlog(" + i + ")'>Edit</button>";
         list += "</li>";
     }
     document.querySelector("#list-items").innerHTML = list;

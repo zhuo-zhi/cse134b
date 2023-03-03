@@ -14,12 +14,12 @@ export function confirmDialogOnClose() {
     dialogOutput.innerHTML = `Confirm result : ${confirmDialog.returnValue}`;
 }
 
-export function promtButtonOnClick(){
+export function promtButtonOnClick() {
     let promtDialog = document.getElementById('promtDialog');
     promtDialog.showModal();
 }
 
-export function inputTextOnChange(e){
+export function inputTextOnChange(e) {
     let okButton = document.getElementById('okButton');
     okButton.value = e.target.value;
 }
