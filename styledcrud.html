@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Zhuo</title>
+    <link rel="icon" href="assets/images/cat_icon.png">
+    <script type="module" defer src="/styledBlog.js"></script>
+    <link href="/styledBlogs.css" rel="stylesheet">
+</head>
+<body id="page-top">
+    <header>
+        <h1 class="heading">
+            Blogs
+        </h1>
+    </header>
+    <main>
+        <dialog id="addDialog">
+            <form method="dialog">
+                <label for="title">Post Title: </label>
+                <input type="text" id="title" name="title"/>
+                <br>
+                <label for="date">Post Date: </label>
+                <input type="date" id="date" name="date" min="2000-01-01" max="2023-12-31" value="2000-01-01"/>
+                <br>
+                <label for="summary">Post Summary: </label>
+                <input type="text" id="summary" name="summary"/>
+                <br>
+                <input type="hidden" id="isEdit" name="isEdit" value="-1">
+                <div id="formButton">
+                    <button value="" class="button formButton">Cancel</button>
+                    <button id="saveButton" value="default" class="button formButton">Save</button>
+                </div>
+            </form>
+        </dialog>
+
+        <button id="add" class="button">Add blogs</button>  
+                    
+        <div class="row">
+            <table>
+                <colgroup>
+                    <col span="1" style="width: 20%;">
+                    <col span="1" style="width: 10%;">
+                    <col span="1" style="width: 60%;">
+                    <col span="1" style="width: 10%;">
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th>Title</th>
+                    <th>Date</th>
+                    <th>Summary</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody id="list-items"></tbody>
+            </table>
+        </div>
+    </main>
+    <footer>
+        <hr />
+        &copy; 2023 Zhuo
+    </footer>
+</body>
+</html>

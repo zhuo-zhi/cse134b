@@ -1,0 +1,66 @@
+.button:hover,
+.button:focus {
+  opacity: .75;
+  cursor: pointer;
+}
+
+table{
+	width:100%;
+    overflow: hidden;
+}
+
+table thead tr {
+    background-color: #333333;
+    color: #ffffff;
+    text-align: left;
+}
+
+h1 {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 3rem;
+    line-height: 4rem;
+}
+
+
+#add {
+  background-color: #222;
+  border-radius: 4px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  width: 8rem;
+  padding: 10px 10px;
+  text-align: center;
+  min-height: 25px;
+  min-width: 25px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+label{
+    display: block;
+    float: left;
+    clear: left;
+    text-align: right;
+    width: 7rem;
+}
+
+input {
+    display: block;
+    float: left;
+}
+
+#formButton {
+    margin-top: 1rem;
+    margin-left: 3rem;
+}
+
+.formButton {
+    background-color: black;
+    border: none;
+    color: white;
+    text-align: center;
+}

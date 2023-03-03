@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Zhuo</title>
+    <link rel="icon" href="assets/images/cat_icon.png">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.0.1/purify.js"></script>
+</head>
+<body id="page-top">
+    <header>
+        <h1>
+            Simple Dialogs
+        </h1>
+    </header>
+    <main>
+        <button type="button" id="alert">Alert</button>
+        <button type="button" id="confirm">Confirm</button>
+        <button type="button" id="promt">Prompt</button>
+        <button type="button" id="saferPromt">Safer Prompt</button>
+        <hr>
+        <output id="dialogOutput"></output>
+    </main>
+    <footer>
+        <hr />
+        &copy; 2023 Zhuo
+    </footer>
+</body>
+<script>
+    let alertButton = document.getElementById('alert');
+    alertButton.addEventListener('click', () => {
+        alert('Alert pressed!');
+    });
+
+    let dialogOutput = document.getElementById('dialogOutput');
+    let confimrButton = document.getElementById('confirm');
+    confimrButton.addEventListener('click', () => {
+        if(confirm('Do you confirm this?')) {
+            dialogOutput.innerHTML = 'The value returned by the confirm method is : true';
+        } else {
+            dialogOutput.innerHTML = 'The value returned by the confirm method is : false';
+        }
+    })
+
+    let promtButton = document.getElementById('promt');
+    promtButton.addEventListener('click', () => {
+        let userInput = prompt();
+        if (!userInput) {
+            dialogOutput.innerHTML = 'User didn’t enter anything';
+        } else {
+            dialogOutput.innerHTML = userInput;
+        }
+    })
+
+    let saferPromtButton = document.getElementById('saferPromt');
+    saferPromtButton.addEventListener('click', () => {
+        let userInput = prompt('', `<b onmouseover="alert('pwned')">Roll me</b>`);
+        if (!userInput) {
+            dialogOutput.innerHTML = 'User didn’t enter anything';
+        } else {
+            let clean = DOMPurify.sanitize(userInput);
+            dialogOutput.innerHTML = clean;
+        }
+    })
+</script>
+</html>
