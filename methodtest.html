@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Zhuo</title>
+    <link rel="icon" href="assets/images/cat_icon.png">
+    <link href="/style.css" rel="stylesheet">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-74SKSZF27E"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-74SKSZF27E');
+    </script>
+</head>
+<body id="page-top">
+    <!-- backgroun image from: https://yosemite.org/starry-nights-in-the-sierra/ -->
+    <nav id="sideNav" class="navbar">
+        <a class="navbard-head" href="/index.html">
+            <figure class="img-profile-figure">
+                <img class="img-profile" src="assets/images/cartoon_avatar.png" alt="avatar" height="100" width="100"/>
+                <figcaption class="author">Zhuo Zhi</figcaption>
+            </figure>
+        </a>
+        <a class="horizontal-author" href="/index.html">Zhuo Zhi</a>
+        <a class="hamburger" href="#navbar-content">
+            <img class="nav-icon" src="assets/images/ham-removebg.png" alt="nav-icon"/>
+        </a>
+        <div class="navbar-content" id="navbar-content">
+            <ul class="navbar-list" id="navbar-list">
+                <li class="nav-item close">
+                    <a class="nav-link" href="#">
+                        <img src="assets/images/crossicon-removebg.png" atl="close" height="20" width="20" />
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/bio.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/projects.html">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/publications.html">Publications</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/experiments.html">Experiments</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/methodtest.html">hw5 part1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/webcomponent.html">hw5 part2</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <header>
+        <h1>
+            AJAX Methods
+        </h1>
+    </header>
+    <main>
+        <form id="form">
+            <label for="id">id: </label>
+            <input type="number" id="id" name="id" />
+            <br />
+            <label for="article_name">article_name: </label>
+            <input type="text" id="article_name" name="article_name" />
+            <br />
+            <label for="article_body">article_body: </label>
+            <textarea id="article_body" name="article_body"></textarea>
+            <br />
+            <fieldset>
+                <legend>Request Types</legend>
+                <label for="XMLHttpRequest">XMLHttpRequest</label>
+                <input type="radio" id="XMLHttpRequest" name="requests" value="XMLHttpRequest" checked/>
+                <label for="fetch">fetch</label>
+                <input type="radio" id="fetch" name="requests" value="fetch" />
+            </fieldset>
+            <br />
+            <input type="hidden" id="date" name="date"/>
+            <br />
+        </form>
+        <div id="methods">
+            <button type="button" id="postBtn">postBtn</button>
+            <button type="button" id="getBtn">getBtn</button>
+            <button type="button" id="putBtn">putBtn</button>
+            <button type="button" id="deleteBtn">deleteBtn</button>
+        </div>
+        <output id="response" style="white-space: pre"></output>
+    </main>
+    <footer>
+        <hr />
+        &copy; 2023 Zhuo
+    </footer>
+</body>
+<script type="module">
+    import * as customReq from './requests.js'
+    const postBtn = document.getElementById('postBtn');
+    postBtn.addEventListener('click', () => {
+        let dateField = document.getElementById('date');
+        dateField.value = new Date();
+        let requestType = document.querySelector('input[name="requests"]:checked').value;
+        if(requestType === 'XMLHttpRequest') {
+            customReq.ajaxPost();
+        } else {
+            customReq.fetchPost();
+        }
+        customReq.clearOutput();
+    });
+
+    const getBtn = document.getElementById('getBtn');
+    getBtn.addEventListener('click', () => {
+        let dateField = document.getElementById('date');
+        dateField.value = new Date();
+        let requestType = document.querySelector('input[name="requests"]:checked').value;
+        if(requestType === 'XMLHttpRequest') {
+            customReq.ajaxGet();
+        } else {
+            customReq.fetchGet();
+        }
+        customReq.clearOutput();
+    });
+
+    const putBtn = document.getElementById('putBtn');
+    putBtn.addEventListener('click', () => {
+        let dateField = document.getElementById('date');
+        dateField.value = new Date();
+        let requestType = document.querySelector('input[name="requests"]:checked').value;
+        if(requestType === 'XMLHttpRequest') {
+            customReq.ajaxPut();
+        } else {
+            customReq.fetchPut();
+        }
+        customReq.clearOutput();
+    });
+
+    const deleteBtn = document.getElementById('deleteBtn');
+    deleteBtn.addEventListener('click', () => {
+        let dateField = document.getElementById('date');
+        dateField.value = new Date();
+        let requestType = document.querySelector('input[name="requests"]:checked').value;
+        if(requestType === 'XMLHttpRequest') {
+            customReq.ajaxDelete();
+        } else {
+            customReq.fetchDelete();
+        }
+        customReq.clearOutput();
+    });
+</script>
+</html>
